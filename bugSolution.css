@@ -1,0 +1,10 @@
+To fix this, ensure the path to the image is correct relative to the CSS file's location.  If `style.css` is in the `css` folder and `image.png` is in the `images` subfolder, the correct path is `url('../images/image.png');`.
+
+**Corrected CSS (bugSolution.css):**
+
+```css
+.my-element {
+  background-image: url('../images/image.png'); /* Correct path */
+}
+```
+The `../` moves one directory up before going into the `images` folder.  Adjust accordingly based on your project structure.
